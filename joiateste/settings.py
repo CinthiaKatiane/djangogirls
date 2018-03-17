@@ -25,7 +25,7 @@ SECRET_KEY = 'z364m(6+kvpi-9k=h=f_z0p21s1f@!x1#7a+5xg5rq)1e=g0zf'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'cinthiakatiane.pythonanywhere.com']
 
 
 # Application definition

@@ -5,3 +5,4 @@ djangoteste
 db.sqlite3
 /static
 .DS_Store
+/myenv
