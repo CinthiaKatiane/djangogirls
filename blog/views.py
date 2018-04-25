@@ -4,8 +4,13 @@ from django.utils import timezone
 from .forms import PostForm
 from django.shortcuts import redirect
 
+# test_mv
+from django.db import models
 
-# Create your views here.
+def test_br(request):
+    for p in Post.objects.raw('SELECT * FROM IN CASE exemplo'):
+        pass
+    
 def post_list(request):
 	posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 	return render(request, 'blog/post_list.html', {'posts':posts})
